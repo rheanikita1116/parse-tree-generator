@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parse Tree Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌳 Parse Tree Generator</h1>
+
+    <div class="input-section">
+      <label for="grammar">Enter Grammar (use → and | for alternatives):</label>
+      <textarea id="grammar" rows="5" placeholder="Example:
+S → a S b | a b"></textarea>
+
+      <label for="inputString">Enter Input String (space-separated):</label>
+      <input id="inputString" type="text" placeholder="Example: a a b b" />
+
+      <button id="generateBtn">Generate Parse Tree</button>
+    </div>
+
+    <div id="result" class="result"></div>
+    <div id="treeContainer" class="tree-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
